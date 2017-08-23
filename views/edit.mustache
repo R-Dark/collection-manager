@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Edit Bikes</h1>
+
+    <form class="" action="/bikes/{{bikes._id}}" method="post">
+      <div class="">
+        <label for="model">Name</label>
+        <input type="text" name="model" value="{{bikes.model}}">{{#errors.model}}Model is required{{/errors.model}}
+      </div>
+
+      <div class="">
+        <label for="wheelSize">Wheel Size</label>
+        <input type="text" name="wheelSize" value="{{bikes.wheelSize}}">{{#errors.wheelSize}}Wheel Size is required{{/errors.wheelSize}}
+      </div>
+
+      <button type="submit" name="button">Update City</button>
+    </form>
+
+
+  </body>
+</html>

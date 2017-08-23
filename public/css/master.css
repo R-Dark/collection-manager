@@ -65,7 +65,9 @@ form {
 form button {
   margin-left: 50px;
   margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 15px;
   background-color: #2552aa;
   color: white;
+  border-style: none;
 }

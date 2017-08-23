@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>New Bike</h1>
+
+    <form class="" action="/bikes" method="post">
+      <div class="">
+        <label for="name">Name</label>
+        <input type="text" name="model" value="{{bikes.model}}">{{#errors.model}}Name is required{{/errors.model}}
+      </div>
+
+      <div class="">
+        <label for="wheelSize">Wheel Size</label>
+        <input type="text" name="wheelSize" value="{{bikes.wheelSize}}">{{#errors.wheelSize}}State is required{{/errors.wheelSize}}
+      </div>
+
+      <button type="submit" name="button">Add your bike to database!</button>
+    </form>
+
+
+  </body>
+</html>
