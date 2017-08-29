@@ -68,9 +68,9 @@ app.post("/bikes/:id", function(req, res) {
   }).then(function(bikes) {
     const model = req.body.model
     const wheelSize = req.body.wheelSize
-    bike.model = model
-    bike.wheelSize = wheelSize
-    bike
+    bikes.model = model
+    bikes.wheelSize = wheelSize
+    bikes
       .save()
       .then(function(bikes) {
         res.redirect("/")
